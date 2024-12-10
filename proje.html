@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fun Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Thank you message -->
+  <div id="thanksMessage" class="thanks-message">
+    <p>Thanks for visiting my website! Enjoy the games!</p>
+  </div>
+
+  <!-- Dropdown Menu -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Games</a>
+        <ul class="dropdown">
+          <li><a href="#rockPaperScissors">Rock, Paper, Scissors</a></li>
+          <li><a href="#guessTheNumber">Guess the Number</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Rock Paper Scissors Game -->
+  <section id="rockPaperScissors">
+    <h2>Rock, Paper, Scissors</h2>
+    <div class="game">
+      <button id="rock">Rock</button>
+      <button id="paper">Paper</button>
+      <button id="scissors">Scissors</button>
+      <p id="gameResult"></p>
+    </div>
+  </section>
+
+  <!-- Guess the Number Game -->
+  <section id="guessTheNumber">
+    <h2>Guess the Number</h2>
+    <div class="game">
+      <p>Guess a number between 1 and 100:</p>
+      <input type="number" id="guess" min="1" max="100">
+      <button id="submitGuess">Submit</button>
+      <p id="numberResult"></p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

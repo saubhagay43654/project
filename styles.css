@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background: url('https://via.placeholder.com/1600x900') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  /* Navigation styles */
+  nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav ul li:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Dropdown menu styles */
+  nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  nav ul li:hover .dropdown {
+    display: block;
+  }
+  
+  nav ul li .dropdown li {
+    padding: 5px 10px;
+  }
+  
+  nav ul li .dropdown li a {
+    color: white;
+  }
+  
+  /* Thank you message */
+  .thanks-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Game section styles */
+  .game {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  input[type="number"] {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  /* For mobile responsiveness */
+  @media (max-width: 768px) {
+    nav ul li {
+      display: block;
+      text-align: center;
+    }
+  }
